@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <link rel="stylesheet" href="../bootstrap.css">
+    <style>
+        .image{
+            background-image: url("hero_img.jpg");
+            background-size: cover;
+            opacity:0.85;
+            background-attachment: fixed;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+       .line{
+            color: blueviolet;
+            height: 2px;
+            background-color: blueviolet;
+        }
+        .first img,
+        .second img,
+        .third img,
+        .fourth img{
+            transition: all 0.3s;
+            opacity: 0.5;
+        }
+        #first:hover,
+        #second:hover,
+        #third:hover,
+        #fourth:hover{
+            opacity: 1;
+        }
+        .first .para1,
+        .second .para2,
+        .third .para3,
+        .fourth .para4 {
+            visibility: hidden;
+        }
+         #first:hover+div,
+         #second:hover+div,
+         #third:hover+div, 
+         #fourth:hover+div{
+            visibility: visible;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="mainSec">
+        <div class="col-12 vh-100 image  d-flex justify-content-center align-items-center attach id="firstLayer">
+            <div class="text-center col-12 w-50">
+                 <h2 class="text-white text-uppercase col-12">ITI Mansoura</h2>
+                 <p class=" text-white col-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Labore veritatis dignissimos illo ut magnam, quae enim consequatur temporibus tempore,
+                     officia eveniet dolore minima quis ullam fugiat earum! Accusamus, asperiores officiis?
+                      Quis inventore eum placeat perferendis voluptatem nostrum mollitia modi, dolorem incidunt fugit, animi vel. Quod provident reprehenderit, obcaecati
+                    , maiores asperiores numquam accusamus, ab culpa iusto corrupti facere. Quo, dolor provident.
+                </p>
+                <button class="btn btn-outline-danger">Register Now</button>
+            </div>
+        </div>
+    </div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="d-flex align-items-center flex-column ">
+         <div class="fs-1 text-dark">Activites</div>
+         <div class="line  col-2 mb-5"></div>
+    </div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="d-md-flex justify-content-md-evenly flex-md-row text-center d-flex flex-column ">
+        <div class="col-12 col-md-4">
+                <img src="p1.jpg" alt="" class="w-75 mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Voluptate vitae, at provident, doloribus odit voluptatem
+                    sunt quia sit nulla iure ipsa
+                    nostrum deserunt corrupti perspiciatis natus dolore totam vero eius.
+                </p>
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="p2.jpg" alt="" class="w-75 mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Voluptate vitae, at provident, doloribus odit voluptatem
+                    sunt quia sit nulla iure ipsa
+                    nostrum deserunt corrupti perspiciatis natus dolore totam vero eius.
+                </p>
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="p3.jpg" alt="" class="w-75 mb-4">
+            <div></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Voluptate vitae, at provident, doloribus odit voluptatem
+                    sunt quia sit nulla iure ipsa
+                    nostrum deserunt corrupti perspiciatis natus dolore totam vero eius.
+                </p>
+        </div>
+    </div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="d-md-flex justify-content-md-evenly flex-md-row text-center d-flex flex-column w-100" id="parent">
+    <div class="first">
+        <img id="first" src="p4.jpg" alt="" class="w-100">
+        <div class="para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eius quas vitae, quam a quidem praesentium repellat unde! Nihil ipsa, 
+            sit dignissimos dolor voluptate maxime ratione culpa doloremque, 
+            nobis similique iste.
+        </div>
+    </div>
+    <div class="second">
+        <img id="second" src="p6.jpg" alt=""  class="w-100">
+        <div class="para2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eius quas vitae, quam a quidem praesentium repellat unde! Nihil ipsa, 
+            sit dignissimos dolor voluptate maxime ratione culpa doloremque, 
+            nobis similique iste.
+        </div>
+    </div>
+    <div class="third">
+        <img id="third" src="p5.jpg" alt="" class="w-100">
+        <div class="para3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eius quas vitae, quam a quidem praesentium repellat unde! Nihil ipsa, 
+            sit dignissimos dolor voluptate maxime ratione culpa doloremque, 
+            nobis similique iste.
+        </div>
+    </div>
+    <div class="fourth">
+        <img id="fourth" src="p4.jpg" alt="" class="w-100">
+        <div class="para4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eius quas vitae, quam a quidem praesentium repellat unde! Nihil ipsa, 
+            sit dignissimos dolor voluptate maxime ratione culpa doloremque, 
+            nobis similique iste.
+        </div>
+    </div>
+    </div>
+</body>
+</html>
